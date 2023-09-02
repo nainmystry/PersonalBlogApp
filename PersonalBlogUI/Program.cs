@@ -24,4 +24,7 @@ app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");
 
+// Angular catch-all route
+app.MapFallbackToController("Index", "Home");
+
 app.Run();
