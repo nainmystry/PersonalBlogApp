@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +8,15 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'ClientApp';
   dynamicImageUrl = '';
+
+  isMobile: boolean = false;
+  isTab: boolean = false;
+
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event): void {
+    this.isMobile = window.innerWidth <= 768;
+    this.isTab = window.innerWidth <= 1200 && window.innerWidth >= 768;
+  }
   ngOnInit() {
   }
   
