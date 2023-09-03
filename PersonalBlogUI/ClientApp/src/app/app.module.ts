@@ -12,6 +12,7 @@ import { RecognitionComponent } from './recognition-component/recognition-compon
 import { ExperienceComponent } from './experience-component/experience-component.component';
 import { LoginComponent } from './login-component/login-component.component';
 import { BlogComponent } from './blog-component/blog-component.component';
+import { SmoothScrollDirective } from './Directives/SmoothScroll/smooth-scroll.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BlogComponent } from './blog-component/blog-component.component';
     RecognitionComponent,
     ExperienceComponent,
     LoginComponent,
-    BlogComponent
+    BlogComponent,
+    SmoothScrollDirective
   ],
   imports: [
     BrowserModule,

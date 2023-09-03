@@ -1,9 +1,48 @@
-<div class="MainBody" style="overflow-x: hidden; overflow-y:scroll;"> 
-  <app-nav-bar-comp></app-nav-bar-comp> 
-  
-  <div [ngClass]="{'centered-div': isMobile}"> 
-    <router-outlet></router-outlet>
-  </div>
+<app-nav-bar-comp></app-nav-bar-comp>
+<!-- <div  >    -->
+  <section id="home" class="MainBody">
+    <div [ngClass]="{'centered-div': isMobile}">
+        <app-home-component></app-home-component>
+    </div>
+  </section>
+  <!-- <section id="login" class="section-even">
+    <div [ngClass]="{'centered-div': isMobile}">
+        <app-login-component></app-login-component>
+    </div>-->
+  <!-- </section>  This is supposed to have router outlet -->
+<!-- </div> -->
 
-  <app-footer-comp></app-footer-comp>
-</div>
+  <!-- <div  >  -->
+    <section id="blogs" class="section-even">
+      <div [ngClass]="{'centered-div': isMobile}">   
+          <app-blog-component></app-blog-component>    
+      </div>   
+    </section>
+  <!-- </div> -->
+ 
+  <!-- <div  >  -->
+    <section id="skills" class="MainBody">
+      <div [ngClass]="{'centered-div': isMobile}">  
+          <app-skill-component></app-skill-component>   
+      </div>    
+    </section>
+ <!-- </div> -->
+
+ <!-- <div  >  -->
+  <section id="recognition" class="section-even">
+    <div [ngClass]="{'centered-div': isMobile}">
+        <app-recognition-component></app-recognition-component>   
+    </div>
+  </section>
+<!-- </div> -->
+
+<!-- <div  >  -->
+  <section id="experience" class="MainBody">
+    <div [ngClass]="{'centered-div': isMobile}">
+      <app-experience-component></app-experience-component>
+    </div>
+  </section> 
+<!-- </div> -->
+  
+
+<app-footer-comp></app-footer-comp>
