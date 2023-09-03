@@ -5,6 +5,6 @@ import { Component } from '@angular/core';
   templateUrl: './recognition-component.component.html',
   styleUrls: ['./recognition-component.component.css']
 })
-export class RecognitionComponentComponent {
+export class RecognitionComponent {
 
 }

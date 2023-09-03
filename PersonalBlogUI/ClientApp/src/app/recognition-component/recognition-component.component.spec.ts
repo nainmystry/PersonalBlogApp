@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RecognitionComponentComponent } from './recognition-component.component';
+import { RecognitionComponent } from './recognition-component.component';
 
 describe('RecognitionComponentComponent', () => {
-  let component: RecognitionComponentComponent;
-  let fixture: ComponentFixture<RecognitionComponentComponent>;
+  let component: RecognitionComponent;
+  let fixture: ComponentFixture<RecognitionComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [RecognitionComponentComponent]
+      declarations: [RecognitionComponent]
     });
-    fixture = TestBed.createComponent(RecognitionComponentComponent);
+    fixture = TestBed.createComponent(RecognitionComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

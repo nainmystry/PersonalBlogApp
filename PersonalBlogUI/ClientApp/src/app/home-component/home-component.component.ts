@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   templateUrl: './home-component.component.html',
   styleUrls: ['./home-component.component.css']
 })
-export class HomeComponentComponent {
+export class HomeComponent {
 profilePic:string = '';
 name:string = '';
 description:string = '';

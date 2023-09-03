@@ -10,12 +10,10 @@ export class AppComponent {
   dynamicImageUrl = '';
 
   isMobile: boolean = false;
-  isTab: boolean = false;
 
   @HostListener('window:resize', ['$event'])
   onResize(event: Event): void {
     this.isMobile = window.innerWidth <= 768;
-    this.isTab = window.innerWidth <= 1200 && window.innerWidth >= 768;
   }
   ngOnInit() {
   }
