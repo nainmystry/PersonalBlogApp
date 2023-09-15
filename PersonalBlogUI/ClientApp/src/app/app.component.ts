@@ -7,8 +7,7 @@ import { Component, HostListener } from '@angular/core';
 })
 export class AppComponent {
   title = 'ClientApp';
-  dynamicImageUrl = '';
-
+  isHeaderVisible = true;
   isMobile: boolean = false;
 
   @HostListener('window:resize', ['$event'])
@@ -16,6 +15,12 @@ export class AppComponent {
     this.isMobile = window.innerWidth <= 768;
   }
   ngOnInit() {
+  }
+
+  @HostListener('window:scroll', [])
+  onWindowScroll() {
+    // Check the scroll position and toggle the CSS class accordingly
+    this.isHeaderVisible = window.scrollY <= 1;
   }
   
   

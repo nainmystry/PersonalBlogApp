@@ -14,7 +14,7 @@ const routes: Routes = [
   // { path: 'skills', component: SkillComponent },
   // { path: 'experience', component: ExperienceComponent },
   // { path: 'recognition', component: RecognitionComponent },
-  // { path: 'login', component: LoginComponent }
+  { path: 'login', component: LoginComponent }
 ];
 
 @NgModule({

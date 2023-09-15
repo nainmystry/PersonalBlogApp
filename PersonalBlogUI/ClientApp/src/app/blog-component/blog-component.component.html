@@ -1,1 +1,97 @@
-<p>blog-component works!</p>
+<h2 style="text-align: center;">Blogs</h2>
+
+
+<!-- <div class="card text-center">
+    <div class="card-header">
+      <mdb-tabs>
+        <mdb-tab title="C#"></mdb-tab>
+        <mdb-tab title="Entity Framework"></mdb-tab>
+        <mdb-tab title="Python"></mdb-tab>
+        <!-- <mdb-tab title="Disabled" [disabled]="true">Disabled</mdb-tab> -->
+      <!-- </mdb-tabs>
+    </div>
+    <div class="card-body" *ngFor="let item of cardItems">
+        <div style="width: 50%;">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">{{ item.header }}</h5>
+                <p class="card-text">{{ item.description }}</p>
+                <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+              <!-- </div>
+            </div>
+          </div> -->
+          <!-- <div class="col-md-6">
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div> -->
+    <!-- </div>
+  </div> -->
+
+<!-- <div class="container">   
+    <div class="card-container" *ngFor="let item of cardItems; let i = index">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title">{{ item.header }}</h5>
+        <hr style="width: 20%;">
+        <p class="card-text">{{ item.description }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="navigation-buttons">
+    <button (click)="navigate(-1)">Previous</button>
+    <button (click)="navigate(1)">Next</button>
+  </div>
+</div> -->
+
+<div class="container">
+    <div class="row" >
+        <div class="col-1">
+            <button (click)="navigate(-1)">Previous</button>
+        </div>
+        <div class="col-10">
+            <div class="card-container" *ngFor="let item of cardItems; let i = index">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">{{ item.header }}</h5>
+                    <hr style="width: 20%;">
+                    <p class="card-text">{{ item.description }}</p>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-1">
+            <button (click)="navigate(1)">Next</button>
+        </div>
+        
+          <!-- <div class="navigation-buttons">
+            
+            
+          </div>         -->
+    </div>
+  </div>
+
+
+<!-- <div class="card-container">
+    <div class="card-wrapper" [style.transform]="'translateX(' + cardOffset + 'px)'">
+      <div class="card" *ngFor="let item of cardItems">
+        <div class="card-body">
+            <h5 class="card-title">{{ item.header }}</h5>
+            <hr style="width: 20%;"> -->
+            <!-- <p>Topic: C#</p>
+            <hr style="width: 20%;"> -->
+            <!-- <p class="card-text">{{ item.description }}</p>
+        </div>
+      </div>
+    </div>
+    <button class="nav-button" (click)="previousCards()" [disabled]="cardOffset === 0">
+      Previous
+    </button>
+    <button class="nav-button" (click)="nextCards()" [disabled]="cardOffset === maxCardOffset">
+      Next
+    </button>
+  </div> -->

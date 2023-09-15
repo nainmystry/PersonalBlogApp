@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavBarComponent } from './nav-bar-comp/nav-bar-comp.component';
@@ -13,6 +13,9 @@ import { ExperienceComponent } from './experience-component/experience-component
 import { LoginComponent } from './login-component/login-component.component';
 import { BlogComponent } from './blog-component/blog-component.component';
 import { SmoothScrollDirective } from './Directives/SmoothScroll/smooth-scroll.directive';
+import { MatExpansionModule } from '@angular/material/expansion';
+import { MatCardModule } from '@angular/material/card';
+import { MdbTabsModule } from 'mdb-angular-ui-kit/tabs';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,11 @@ import { SmoothScrollDirective } from './Directives/SmoothScroll/smooth-scroll.d
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MdbCollapseModule
+    MdbCollapseModule,
+    BrowserAnimationsModule,
+    MatExpansionModule,
+    MatCardModule,
+    MdbTabsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
